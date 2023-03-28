@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Meila Création Farzand</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <script src="../js/script.js"></script>
+
+
+    </head>
+    <body>
+
+        <div id="titre-logo">
+            <a href="accueil.html"><img id="logo" src="../media/logo.png" alt="MCF" ></a>
+            <h1><a href="accueil.html"><span class="lettreMCF">M</span>eila <span class="lettreMCF">C</span>réation <span class="lettreMCF">F</span>arzand</a> </h1>
+        </div>
+        <div id="divReseaux">
+            <ul id="reseaux">
+                <li class="reseauxA"><a  href="https://www.facebook.com/meila.creation.farzand"><img  class="reseauxI" src="../media/facebook.png" alt=""></a></li>
+                <li class="reseauxA"><a  href="https://www.instagram.com/mcf_besancon"><img  class="reseauxI" src="../media/instagram.png" alt=""></a></li>
+                <li class="reseauxA"><a  href="https://www.google.com/maps/place/19+Av.+Font+Argent,+25000+Besan%C3%A7on/@47.2451808,6.0312598,17z/data=!4m5!3m4!1s0x478d6325b8a0c0eb:0xbdafec37aba08048!8m2!3d47.2452287!4d6.0326223"><img  class="reseauxI" src="../media/marker.png" alt=""></a></li>
+            </ul>
+        </div>
+            <nav id="menu">
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li ><a href="horaires.html">Horaires</a></li>
+                    <li ><a href="prix.html">Prix</a></li>
+                    <li class="current"><a href="creations.html">Créations</a></li>
+                    <li><a href="nousContacter.html">Nous contacter</a></li>
+                </ul>
+            </nav>
+
+            <h1 id="titre">Nos créations</h1>
+            <table id="tab-images">
+                <?php
+                    $directory = "../PHP/media/images/";
+                    $images = glob($directory . "*.{jpg,png,gif}", GLOB_BRACE);
+                    foreach($images as $image) {
+                ?>
+                            <tr>
+                                <td> <a href="<?php echo $image; ?>" class="gallery"><img src="<?php echo $image; ?>"/></a></td>
+                            </tr>
+                <?php
+                    }
+                ?>
+            </table>
+
+
+
+        <div id="btn-contact-foot">
+            <a href="nousContacter.html" id="footerContact">Nous contacter</a>
+        </div>
+        <hr>
+        <p id="footer">
+            Meila Création Farzand<br>
+            19 AVENUE FONTAINE ARGENT <br>
+            25000 – Besançon <br>
+            07 68 35 16 92 <br>
+            Copyright MCF – Tous droits réservés<br>
+        </p>
+    </body>
+</html>

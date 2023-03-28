@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Meila Création Farzand</title>
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+
+    <div id="titre-logo">
+        <a href="accueil.html"><img id="logo" src="../media/logo.png" alt="MCF" ></a>
+        <h1><a href="accueil.html"><span class="lettreMCF">M</span>eila <span class="lettreMCF">C</span>réation <span class="lettreMCF">F</span>arzand</a> </h1>
+    </div>
+
+    <nav id="divReseaux">
+        <ul id="reseaux">
+            <li class="reseauxA"><a  href="https://www.facebook.com/meila.creation.farzand"><img  class="reseauxI" src="../media/facebook.png" alt=""></a></li>
+            <li class="reseauxA"><a  href="https://www.instagram.com/mcf_besancon"><img  class="reseauxI" src="../media/instagram.png" alt=""></a></li>
+            <li class="reseauxA"><a  href="https://www.google.com/maps/place/19+Av.+Font+Argent,+25000+Besan%C3%A7on/@47.2451808,6.0312598,17z/data=!4m5!3m4!1s0x478d6325b8a0c0eb:0xbdafec37aba08048!8m2!3d47.2452287!4d6.0326223"><img  class="reseauxI" src="../media/marker.png" alt=""></a></li>
+        </ul>
+    </nav>
+        <nav id="menu">
+            <ul>
+                <li><a href="accueil.html">Accueil</a></li>
+                <li><a href="horaires.html">Horaires</a></li>
+                <li><a href="prix.html">Prix</a></li>
+                <li><a href="creations.html">Créations</a></li>
+                <li class="current"><a href="nousContacter.html">Nous contacter</a></li>
+            </ul>
+        </nav>
+
+    <h1 id="titre">Nous contacter</h1>
+
+
+    <div id="container">
+        <iframe id="carte" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2708.5380700729565!2d6.0312598!3d47.2451808!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478d6325b8a0c0eb%3A0xbdafec37aba08048!2s19%20Av.%20Font%20Argent%2C%2025000%20Besan%C3%A7on!5e0!3m2!1sfr!2sfr!4v1654804924371!5m2!1sfr!2sfr" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="formulaire">
+            <form action="../PHP/contact.php" method="post" id="formulaire">
+
+                <label for="prenom"></label><input type="text" id="prenom" name="prenomCL" placeholder="Prénom" required>
+                <label for="nom"></label><input type="text" id="nom" name="nomCL" placeholder="Nom" required>
+                <label for="email"></label><input type="text" id="email" name="emailCL" placeholder="Mail" required>
+                <label for="sujet"></label><input type="text" id="sujet" name="sujetCL" placeholder="Sujet" required>
+                <label for="message"></label><textarea id="message" name="messageCL" placeholder="Message" style="height:200px" required></textarea>
+
+                <input type="submit" value="Envoyer">
+
+            </form>
+        </div>
+    </div>
+    <hr>
+    <p id="footer">
+        Meila Création Farzand<br>
+        19 AVENUE FONTAINE ARGENT <br>
+        25000 – Besançon <br>
+        07 68 35 16 92 <br>
+        Copyright MCF – Tous droits réservés<br>
+    </p>
+
+
+    </body>
+</html>
